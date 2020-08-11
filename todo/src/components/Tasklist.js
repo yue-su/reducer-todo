@@ -10,9 +10,7 @@ const Tasklist = props => {
 
     const [task, setTask] = useState({id:'', title:""})
 
-    useEffect(() => {
-        fetchList()
-    }, [])
+    useEffect(() => {fetchList()}, [])
 
     const updatehandler = event => {
         const title = event.target.value
@@ -56,11 +54,10 @@ const Tasklist = props => {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
+    //console.log(state)
     return {
         tasks: state.tasks,
-        deletTask: state.deleteTask,
-        addTask:state.addTask
+
     }
 }
 
