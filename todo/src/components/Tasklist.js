@@ -57,7 +57,6 @@ const mapStateToProps = (state) => {
     //console.log(state)
     return {
         tasks: state.tasks,
-
     }
 }
 
